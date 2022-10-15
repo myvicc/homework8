@@ -8,7 +8,12 @@
 <script>
 const hour = prompt("Enter hours");
 const sek = +hour * 60;
-alert(sek);
+
+if (hour === null || isNaN(+hour)) {
+    alert("Incorrect data");
+} else {
+    alert(sek);
+}
 </script>
 </body>
 </html>
